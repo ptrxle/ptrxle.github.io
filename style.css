@@ -46,6 +46,7 @@ nav {
 nav .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 28px;
   padding: 15px 0;
   flex-wrap: wrap;
@@ -54,7 +55,7 @@ nav .container {
 nav a {
   color: #cbd5e1;
   font-size: 0.95rem;
-  transition: 0.2s;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -138,7 +139,9 @@ nav a:hover {
   background: #2563eb;
   color: #ffffff;
   font-weight: bold;
-  transition: 0.2s;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .button:hover {
@@ -195,10 +198,12 @@ section:nth-of-type(even) {
 
 
 /* =========================
-   EXPERIENCE
+   PROFESSIONAL EXPERIENCE
 ========================= */
 
 .experience-card {
+  width: 100%;
+  max-width: 100%;
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 14px;
@@ -206,26 +211,34 @@ section:nth-of-type(even) {
 }
 
 .experience-featured {
+  display: block;
+  width: 100%;
   padding: 0;
 }
 
+/*
+  Keeps the entire Oceaneering group photo
+  inside the experience card.
+*/
 .oceaneering-photo {
-  width: 100%;
-  height: auto;
-  max-height: 520px;
-  object-fit: cover;
-  object-position: center;
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
   border-bottom: 1px solid #334155;
 }
 
 .experience-content {
+  width: 100%;
   padding: 30px;
 }
 
 .experience-content h3 {
   margin-bottom: 8px;
   color: #f8fafc;
+  font-size: 1.2rem;
 }
 
 .meta {
@@ -249,18 +262,21 @@ section:nth-of-type(even) {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 25px;
 }
 
 .project-card {
+  min-width: 0;
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 14px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .project-card:hover {
@@ -280,6 +296,7 @@ section:nth-of-type(even) {
 }
 
 .project-image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -334,12 +351,12 @@ section:nth-of-type(even) {
 
 
 /* =========================
-   SKILLS
+   TECHNICAL SKILLS
 ========================= */
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -361,12 +378,12 @@ section:nth-of-type(even) {
 
 
 /* =========================
-   EDUCATION
+   EDUCATION & CERTIFICATIONS
 ========================= */
 
 .education-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -445,7 +462,7 @@ footer {
 
 
 /* =========================
-   MOBILE
+   TABLET / MOBILE
 ========================= */
 
 @media (max-width: 800px) {
@@ -485,11 +502,15 @@ footer {
   }
 
   .project-image {
+    width: 100%;
     height: auto;
+    object-fit: contain;
   }
 
   .oceaneering-photo {
-    max-height: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
   }
 
@@ -507,5 +528,51 @@ footer {
 
   .section-title {
     font-size: 1.8rem;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 500px) {
+
+  .container {
+    width: 92%;
+  }
+
+  nav .container {
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .button {
+    padding: 10px 17px;
+  }
+
+  .experience-content,
+  .project-content,
+  .skill-group,
+  .education-card,
+  .contact-card {
+    padding: 20px;
   }
 }
