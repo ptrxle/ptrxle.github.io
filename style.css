@@ -1796,3 +1796,40 @@ footer {
   }
 
 }
+
+/* =========================
+   PROJECT LINK INDICATORS
+========================= */
+
+.project-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+
+.project-top-row .project-type {
+  margin-bottom: 0;
+}
+
+.project-link-label {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #60a5fa;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.clickable-project .project-link-label i {
+  transition: transform 0.25s ease;
+}
+
+.clickable-project:hover .project-link-label i {
+  transform: translate(3px, -3px);
+}
