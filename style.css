@@ -202,10 +202,28 @@ section:nth-of-type(even) {
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 14px;
+  overflow: hidden;
+}
+
+.experience-featured {
+  padding: 0;
+}
+
+.oceaneering-photo {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-bottom: 1px solid #334155;
+}
+
+.experience-content {
   padding: 30px;
 }
 
-.experience-card h3 {
+.experience-content h3 {
   margin-bottom: 8px;
   color: #f8fafc;
 }
@@ -215,12 +233,12 @@ section:nth-of-type(even) {
   margin-bottom: 20px;
 }
 
-.experience-card ul {
+.experience-content ul {
   padding-left: 22px;
   color: #cbd5e1;
 }
 
-.experience-card li {
+.experience-content li {
   margin-bottom: 8px;
 }
 
@@ -468,6 +486,15 @@ footer {
 
   .project-image {
     height: auto;
+  }
+
+  .oceaneering-photo {
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .experience-content {
+    padding: 24px;
   }
 
   nav .container {
