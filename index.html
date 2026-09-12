@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Peter Le | IT, Cloud & Cybersecurity Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
   <nav>
     <div class="container">
@@ -20,10 +27,17 @@
     </div>
   </nav>
 
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
   <header class="hero">
+
     <div class="container hero-content">
 
-      <div>
+      <div class="hero-text">
+
         <h1>Peter Le</h1>
 
         <h2>
@@ -38,13 +52,23 @@
           enterprise IT systems.
         </p>
 
+        <div class="hero-credentials">
+          CompTIA A+ &nbsp;•&nbsp;
+          CompTIA Network+ &nbsp;•&nbsp;
+          Houston, Texas
+        </div>
+
         <div class="button-row">
-          <a class="button" href="#projects">View My Projects</a>
+
+          <a class="button" href="#projects">
+            View My Projects
+          </a>
 
           <a
             class="button secondary"
             href="https://github.com/ptrxle"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
@@ -53,227 +77,465 @@
             class="button secondary"
             href="https://www.linkedin.com/in/leptr"
             target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
+
         </div>
+
       </div>
 
-      <div>
+
+      <div class="hero-photo">
+
         <img
           src="profile.jpg"
           alt="Peter Le professional headshot"
           class="profile-photo"
         />
+
       </div>
 
     </div>
+
   </header>
+
 
   <main>
 
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
     <section id="about">
+
       <div class="container">
-        <h2 class="section-title">About <span>Me</span></h2>
+
+        <h2 class="section-title">
+          About <span>Me</span>
+        </h2>
 
         <p class="about-text">
-          I’m a Computer Information Systems student at the University of
-          Houston with a strong interest in enterprise IT, systems
-          administration, cloud infrastructure, and cybersecurity. I enjoy
-          learning through hands-on projects that simulate real-world IT
-          environments and strengthen my troubleshooting and problem-solving
-          skills.
+          I'm a Computer Information Systems student at the University of
+          Houston who enjoys building and troubleshooting enterprise IT
+          environments. My interests span systems administration, cloud
+          infrastructure, cybersecurity, and IT operations.
         </p>
+
+        <p class="about-text about-second">
+          Through professional IT support experience and hands-on technical
+          projects, I've worked with technologies including Active Directory,
+          Splunk, AWS, Power BI, SQL, and IT service management. I'm currently
+          looking for an opportunity where I can contribute, continue learning,
+          and grow as an IT professional.
+        </p>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         PROFESSIONAL EXPERIENCE
+    ========================== -->
+
     <section id="experience">
+
       <div class="container">
-        <h2 class="section-title">Professional <span>Experience</span></h2>
+
+        <h2 class="section-title">
+          Professional <span>Experience</span>
+        </h2>
 
         <div class="experience-card">
-          <h3>Business Analyst Intern – IT Financial Solutions</h3>
-          <p class="meta">Oceaneering | May 2025 – August 2025</p>
+
+          <h3>
+            Business Analyst Intern – IT Financial Solutions
+          </h3>
+
+          <p class="meta">
+            Oceaneering | May 2025 – August 2025
+          </p>
 
           <ul>
+
             <li>
-              Provided first-level IT support for Finance, IT, and Supply Chain
-              users through ManageEngine ServiceDesk.
+              Provided first-level IT support for Finance, IT, and Supply
+              Chain users through ManageEngine ServiceDesk.
             </li>
+
             <li>
               Troubleshot application access, system, and data-related issues
               affecting enterprise financial platforms.
             </li>
+
             <li>
               Followed ITSM escalation procedures and collaborated with senior
-              IT staff and system owners.
+              IT staff and system owners to resolve complex incidents.
             </li>
+
             <li>
-              Documented incidents, root causes, and resolutions to support
-              consistent issue resolution.
+              Documented incidents, root causes, and resolutions to improve
+              knowledge accuracy and support consistent issue resolution.
             </li>
+
           </ul>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         FEATURED PROJECTS
+    ========================== -->
+
     <section id="projects">
+
       <div class="container">
-        <h2 class="section-title">Featured <span>Projects</span></h2>
+
+        <h2 class="section-title">
+          Featured <span>Projects</span>
+        </h2>
 
         <div class="projects-grid">
 
-          <div class="project-card">
-            <h3>Enterprise IT Helpdesk & Power BI Analytics</h3>
 
-            <p>
-              Built an enterprise-style IT service desk with osTicket, Ubuntu,
-              MySQL, and REST API automation. Developed Power BI dashboards to
-              analyze SLA compliance, resolution time, technician workload,
-              and labor costs.
-            </p>
+          <!-- PROJECT 1 -->
 
-            <div class="tech-tags">
-              <span class="tech-tag">Ubuntu</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">REST API</span>
-              <span class="tech-tag">Bash</span>
+          <div class="project-card featured-project">
+
+            <div class="project-image-container">
+
+              <img
+                src="images/helpdesk-pipeline.jpg"
+                alt="Enterprise IT Helpdesk and Power BI service desk architecture diagram"
+                class="project-image"
+              />
+
             </div>
+
+            <div class="project-content">
+
+              <h3>
+                Enterprise IT Helpdesk & Power BI Analytics
+              </h3>
+
+              <p>
+                Built an enterprise-style IT service desk using Ubuntu Server,
+                Apache, PHP, MySQL, and osTicket. Configured departments,
+                technicians, role-based access, help topics, and SLA policies.
+              </p>
+
+              <p class="project-extra">
+                Automated ticket generation through the osTicket REST API using
+                Bash, cURL, and JSON and developed Power BI dashboards to
+                analyze SLA compliance, resolution time, technician workload,
+                and labor costs.
+              </p>
+
+              <div class="tech-tags">
+
+                <span class="tech-tag">Ubuntu</span>
+                <span class="tech-tag">osTicket</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Bash</span>
+
+              </div>
+
+            </div>
+
           </div>
 
-          <div class="project-card">
-            <h3>Active Directory & Splunk SIEM Lab</h3>
 
-            <p>
-              Built a multi-node Windows enterprise lab using Active Directory,
-              DNS, Group Policy, Splunk, Sysmon, Ubuntu, and Kali Linux.
-              Centralized telemetry and performed MITRE ATT&CK-mapped security
-              simulations.
-            </p>
+          <!-- PROJECT 2 -->
 
-            <div class="tech-tags">
-              <span class="tech-tag">Active Directory</span>
-              <span class="tech-tag">Splunk</span>
-              <span class="tech-tag">Sysmon</span>
-              <span class="tech-tag">MITRE ATT&CK</span>
-              <span class="tech-tag">Windows Server</span>
+          <div class="project-card featured-project">
+
+            <div class="project-image-container">
+
+              <img
+                src="images/active-directory-lab.png"
+                alt="Active Directory and Splunk SIEM home lab architecture diagram"
+                class="project-image"
+              />
+
             </div>
+
+            <div class="project-content">
+
+              <h3>
+                Active Directory & Splunk SIEM Lab
+              </h3>
+
+              <p>
+                Built a multi-node Windows enterprise environment using
+                Windows Server 2022, Active Directory, DNS, Group Policy,
+                Windows 10, Ubuntu, Splunk, and Kali Linux.
+              </p>
+
+              <p class="project-extra">
+                Centralized Windows and Sysmon telemetry in Splunk, simulated
+                RDP brute-force activity, analyzed Windows authentication
+                events, and performed Atomic Red Team testing mapped to the
+                MITRE ATT&CK framework.
+              </p>
+
+              <div class="tech-tags">
+
+                <span class="tech-tag">Active Directory</span>
+                <span class="tech-tag">Splunk</span>
+                <span class="tech-tag">Sysmon</span>
+                <span class="tech-tag">MITRE ATT&CK</span>
+                <span class="tech-tag">Windows Server</span>
+
+              </div>
+
+            </div>
+
           </div>
 
-          <div class="project-card">
-            <h3>AWS Cloud Infrastructure Lab</h3>
 
-            <p>
-              Deployed Linux EC2 instances and configured IAM, S3, VPC
-              networking, security groups, routing, and least-privilege access
-              controls.
-            </p>
+          <!-- PROJECT 3 -->
 
-            <div class="tech-tags">
-              <span class="tech-tag">AWS EC2</span>
-              <span class="tech-tag">IAM</span>
-              <span class="tech-tag">S3</span>
-              <span class="tech-tag">VPC</span>
+          <div class="project-card project-card-no-image">
+
+            <div class="project-content">
+
+              <h3>
+                AWS Cloud Infrastructure Lab
+              </h3>
+
+              <p>
+                Deployed Linux EC2 instances and configured IAM, S3, VPC
+                networking, security groups, and inbound and outbound
+                network controls.
+              </p>
+
+              <p class="project-extra">
+                Applied least-privilege IAM permissions and validated network
+                access, routing behavior, and security group rules across the
+                cloud environment.
+              </p>
+
+              <div class="tech-tags">
+
+                <span class="tech-tag">AWS EC2</span>
+                <span class="tech-tag">IAM</span>
+                <span class="tech-tag">S3</span>
+                <span class="tech-tag">VPC</span>
+                <span class="tech-tag">Linux</span>
+
+              </div>
+
             </div>
+
           </div>
 
-          <div class="project-card">
-            <h3>Recipe Manager Web Application</h3>
 
-            <p>
-              Built a full-stack Flask and SQL application with REST APIs,
-              authentication, CRUD operations, backend validation, JavaScript,
-              and Postman API testing.
-            </p>
+          <!-- PROJECT 4 -->
 
-            <div class="tech-tags">
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">SQL</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">REST API</span>
-              <span class="tech-tag">Postman</span>
+          <div class="project-card project-card-no-image">
+
+            <div class="project-content">
+
+              <h3>
+                Recipe Manager Web Application
+              </h3>
+
+              <p>
+                Built a full-stack Flask and SQL web application with user
+                authentication, CRUD operations, REST APIs, backend
+                validation, and JavaScript.
+              </p>
+
+              <p class="project-extra">
+                Developed and tested application endpoints using Postman while
+                integrating the frontend, backend, and relational database.
+              </p>
+
+              <div class="tech-tags">
+
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Postman</span>
+
+              </div>
+
             </div>
+
           </div>
+
 
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         TECHNICAL SKILLS
+    ========================== -->
+
     <section id="skills">
+
       <div class="container">
-        <h2 class="section-title">Technical <span>Skills</span></h2>
+
+        <h2 class="section-title">
+          Technical <span>Skills</span>
+        </h2>
 
         <div class="skills-grid">
 
+
           <div class="skill-group">
+
             <h3>Systems & Infrastructure</h3>
+
             <p>
-              Windows 10/11, Windows Server 2022, Active Directory, DNS, DHCP,
-              Group Policy, Linux, Ubuntu, ITSM
+              Windows 10/11, Windows Server 2022, Active Directory,
+              DNS, DHCP, Group Policy, Linux, Ubuntu, osTicket, ITSM
             </p>
+
           </div>
 
+
           <div class="skill-group">
+
             <h3>Cloud & Security</h3>
+
             <p>
-              AWS EC2, IAM, S3, VPC, Splunk, Sysmon, MITRE ATT&CK,
-              Windows Event Logs
+              AWS EC2, IAM, S3, VPC, Splunk, Sysmon,
+              MITRE ATT&CK, Windows Event Logs
             </p>
+
           </div>
 
+
           <div class="skill-group">
+
             <h3>Data & Development</h3>
+
             <p>
-              SQL, MySQL, Power BI, DAX, Python, Bash, REST APIs, JSON,
-              Flask, JavaScript
+              SQL, MySQL, Power BI, DAX, Python, Bash,
+              REST APIs, JSON, Flask, JavaScript
             </p>
+
           </div>
 
+
           <div class="skill-group">
+
             <h3>Tools & Platforms</h3>
+
             <p>
-              Jira, GitHub, Postman, VirtualBox, ManageEngine ServiceDesk,
-              Microsoft 365, Excel, Visio
+              Jira, GitHub, Postman, VirtualBox,
+              ManageEngine ServiceDesk, Microsoft 365,
+              Excel, Visio
             </p>
+
           </div>
+
 
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+
     <section id="education">
+
       <div class="container">
-        <h2 class="section-title">Education & <span>Certifications</span></h2>
+
+        <h2 class="section-title">
+          Education & <span>Certifications</span>
+        </h2>
 
         <div class="education-grid">
 
-          <div class="education-card">
-            <h3>B.S. Computer Information Systems</h3>
-            <p>University of Houston</p>
-            <p>Expected Graduation: December 2026</p>
-            <p>Dean’s List: Fall 2023 – Present</p>
-          </div>
 
           <div class="education-card">
-            <h3>Certifications</h3>
-            <p>CompTIA A+</p>
-            <p>CompTIA Network+</p>
+
+            <h3>
+              B.S. Computer Information Systems
+            </h3>
+
+            <p>
+              University of Houston
+            </p>
+
+            <p>
+              Cullen College of Engineering, Technology Division
+            </p>
+
+            <p>
+              Expected Graduation: December 2026
+            </p>
+
+            <p>
+              Dean's List: Fall 2023 – Present
+            </p>
+
           </div>
+
+
+          <div class="education-card">
+
+            <h3>
+              Certifications
+            </h3>
+
+            <div class="certification-item">
+              CompTIA A+
+            </div>
+
+            <div class="certification-item">
+              CompTIA Network+
+            </div>
+
+          </div>
+
 
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
     <section id="contact">
+
       <div class="container">
-        <h2 class="section-title">Let's <span>Connect</span></h2>
+
+        <h2 class="section-title">
+          Let's <span>Connect</span>
+        </h2>
 
         <div class="contact-card">
+
+          <h3>Interested in connecting?</h3>
+
           <p>
-            I'm currently interested in entry-level opportunities across IT
-            infrastructure, systems administration, cloud, IT operations, and
-            cybersecurity.
+            I'm currently interested in entry-level opportunities across
+            IT infrastructure, systems administration, cloud, IT operations,
+            cybersecurity, and related technology roles.
           </p>
 
           <div class="contact-links">
@@ -289,6 +551,7 @@
               class="button secondary"
               href="https://www.linkedin.com/in/leptr"
               target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
@@ -297,20 +560,33 @@
               class="button secondary"
               href="https://github.com/ptrxle"
               target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
 
           </div>
+
         </div>
+
       </div>
+
     </section>
+
 
   </main>
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
-    © 2026 Peter Le
+    <p>© 2026 Peter Le</p>
+    <p>Houston, Texas</p>
   </footer>
 
+
 </body>
+
 </html>
