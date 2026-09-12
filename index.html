@@ -642,7 +642,34 @@
 
   </footer>
 
+<script>
+  const revealElements = document.querySelectorAll(
+    "section .container, .project-card, .skill-group, .education-card"
+  );
 
+  revealElements.forEach((element) => {
+    element.classList.add("reveal");
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12
+    }
+  );
+
+  revealElements.forEach((element) => {
+    observer.observe(element);
+  });
+</script>
+  
 </body>
 
 </html>
