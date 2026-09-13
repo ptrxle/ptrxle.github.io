@@ -4245,3 +4245,94 @@ footer {
   border-color: #334155;
   box-shadow: none;
 }
+
+
+/* =========================================
+   CERTIFICATE ACTION LINKS
+========================================= */
+
+/*
+  Certification cards are informational containers.
+  The whole card is NOT clickable.
+*/
+
+.cert-card {
+  cursor: default;
+
+  transition: none;
+}
+
+.cert-card:hover {
+  transform: none;
+
+  border-color: #334155;
+
+  box-shadow: none;
+}
+
+
+/* Only the View Certificate link is interactive */
+
+.certificate-link {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: auto;
+
+  padding: 14px 16px;
+
+  margin-top: 28px;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  border: 1px solid rgba(96, 165, 250, 0.2);
+
+  border-radius: 9px;
+
+  color: #60a5fa;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.certificate-link:hover {
+  background: rgba(37, 99, 235, 0.16);
+
+  border-color: rgba(96, 165, 250, 0.4);
+
+  color: #93c5fd;
+
+  transform: translateY(-2px);
+}
+
+.certificate-link i {
+  transition: transform 0.2s ease;
+}
+
+.certificate-link:hover i {
+  transform: translate(2px, -2px);
+}
+
+
+/*
+  Prevent old cert-card hover rules
+  from moving the icon.
+*/
+
+.cert-card:hover .certificate-link i {
+  transform: none;
+}
+
+.cert-card .certificate-link:hover i {
+  transform: translate(2px, -2px);
+}
