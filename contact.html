@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
   <title>Contact | Peter Le</title>
 
@@ -35,16 +38,16 @@
           Home
         </a>
 
+        <a href="about.html">
+          About
+        </a>
+
         <a href="experience.html">
           Experience
         </a>
 
         <a href="projects.html">
           Projects
-        </a>
-
-        <a href="skills.html">
-          Skills
         </a>
 
         <a href="education.html">
@@ -55,7 +58,10 @@
           Certifications
         </a>
 
-        <a class="active" href="contact.html">
+        <a
+          class="active"
+          href="contact.html"
+        >
           Contact
         </a>
 
@@ -88,7 +94,7 @@
     <div class="container page-header-content">
 
       <p class="section-label">
-        GET IN TOUCH
+        LET'S CONNECT
       </p>
 
       <h1>
@@ -96,8 +102,9 @@
       </h1>
 
       <p>
-        I'm interested in opportunities across IT infrastructure,
-        systems administration, cloud, cybersecurity, and IT operations.
+        I'm interested in opportunities involving IT infrastructure,
+        systems administration, cybersecurity, cloud technologies,
+        and enterprise IT operations.
       </p>
 
     </div>
@@ -115,15 +122,29 @@
 
       <div class="container">
 
+        <div class="section-heading-row reveal">
+
+          <div>
+
+            <p class="section-label">
+              CONTACT INFORMATION
+            </p>
+
+            <h2 class="section-title no-bottom">
+              Get in <span>Touch</span>
+            </h2>
+
+          </div>
+
+        </div>
+
+
         <div class="contact-page-grid">
 
 
           <!-- EMAIL -->
 
-          <a
-            class="contact-option reveal"
-            href="mailto:lepeter2022@gmail.com"
-          >
+          <article class="contact-option reveal">
 
             <div class="contact-option-icon">
               <i class="fa-solid fa-envelope"></i>
@@ -141,22 +162,24 @@
 
             </div>
 
-            <i class="fa-solid fa-arrow-right"></i>
+            <a
+              href="mailto:lepeter2022@gmail.com"
+              class="contact-action-link"
+              aria-label="Email Peter Le"
+            >
+              Email Me
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
 
-          </a>
+          </article>
 
 
           <!-- LINKEDIN -->
 
-          <a
-            class="contact-option reveal"
-            href="https://www.linkedin.com/in/leptr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <article class="contact-option reveal">
 
             <div class="contact-option-icon">
-              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
             </div>
 
             <div>
@@ -171,19 +194,23 @@
 
             </div>
 
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <a
+              href="https://www.linkedin.com/in/leptr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-action-link"
+              aria-label="View Peter Le on LinkedIn"
+            >
+              View Profile
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
-          </a>
+          </article>
 
 
           <!-- GITHUB -->
 
-          <a
-            class="contact-option reveal"
-            href="https://github.com/ptrxle"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <article class="contact-option reveal">
 
             <div class="contact-option-icon">
               <i class="fa-brands fa-github"></i>
@@ -201,19 +228,23 @@
 
             </div>
 
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <a
+              href="https://github.com/ptrxle"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-action-link"
+              aria-label="View Peter Le on GitHub"
+            >
+              View GitHub
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
-          </a>
+          </article>
 
 
           <!-- RESUME -->
 
-          <a
-            class="contact-option reveal"
-            href="Peter-Le-Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <article class="contact-option reveal">
 
             <div class="contact-option-icon">
               <i class="fa-solid fa-file-lines"></i>
@@ -226,14 +257,23 @@
               </span>
 
               <strong>
-                View My Resume
+                Peter Le Resume
               </strong>
 
             </div>
 
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <a
+              href="Peter-Le-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-action-link"
+              aria-label="View Peter Le's resume"
+            >
+              View Resume
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
-          </a>
+          </article>
 
 
         </div>
@@ -252,7 +292,7 @@
       <div class="container reveal">
 
         <p class="section-label">
-          PROFESSIONAL NETWORK
+          PROFESSIONAL PROFILE
         </p>
 
         <h2 class="section-title">
@@ -260,22 +300,15 @@
         </h2>
 
 
-        <a
-          class="linkedin-card"
-          href="https://www.linkedin.com/in/leptr"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div class="linkedin-card">
 
           <div class="linkedin-left">
-
 
             <img
               src="profile.jpg"
               alt="Peter Le"
               class="linkedin-photo"
             />
-
 
             <div>
 
@@ -289,16 +322,13 @@
 
               </div>
 
-
               <p class="linkedin-title">
                 Computer Information Systems Student
               </p>
 
-
               <p class="linkedin-subtitle">
-                IT Systems • Cybersecurity • Cloud
+                IT Systems, Cybersecurity & Cloud
               </p>
-
 
               <p class="linkedin-location">
 
@@ -313,23 +343,71 @@
           </div>
 
 
-          <div class="linkedin-action">
+          <a
+            href="https://www.linkedin.com/in/leptr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="linkedin-action"
+          >
 
-            <span>
-              View LinkedIn Profile
-            </span>
+            <i class="fa-brands fa-linkedin-in"></i>
 
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            View LinkedIn Profile
 
-          </div>
+          </a>
 
-
-        </a>
+        </div>
 
       </div>
 
     </section>
 
+
+    <!-- =========================
+         CLOSING CTA
+    ========================== -->
+
+    <section>
+
+      <div class="container reveal">
+
+        <div class="github-project-cta">
+
+          <div>
+
+            <p class="section-label">
+              OPPORTUNITIES
+            </p>
+
+            <h2>
+              Interested in Connecting?
+            </h2>
+
+            <p>
+              I'm continuing to build hands-on experience across
+              IT infrastructure, systems administration,
+              cybersecurity, cloud, and enterprise technology
+              as I prepare for the next step in my career.
+            </p>
+
+          </div>
+
+          <a
+            href="mailto:lepeter2022@gmail.com"
+            class="button primary-button"
+          >
+
+            <i class="fa-solid fa-envelope"></i>
+
+            Email Me
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
@@ -338,15 +416,66 @@
        FOOTER
   ========================== -->
 
-  <footer>
+  <footer class="site-footer">
 
-    <p>
-      © 2026 Peter Le
-    </p>
+    <div class="container footer-content">
 
-    <p>
-      Houston, Texas
-    </p>
+      <div class="footer-info">
+
+        <strong>
+          Peter Le
+        </strong>
+
+        <span>
+          © 2026 • Houston, Texas
+        </span>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a
+          href="https://www.linkedin.com/in/leptr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Peter Le on LinkedIn"
+          title="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="https://github.com/ptrxle"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Peter Le on GitHub"
+          title="GitHub"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="mailto:lepeter2022@gmail.com"
+          aria-label="Email Peter Le"
+          title="Email"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a
+          href="Peter-Le-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Peter Le's resume"
+          title="Resume"
+        >
+          <i class="fa-solid fa-file-lines"></i>
+        </a>
+
+      </div>
+
+    </div>
 
   </footer>
 
