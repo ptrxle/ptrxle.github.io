@@ -1856,6 +1856,45 @@ section {
   color: #e2e8f0;
 }
 
+/* =========================
+   GITHUB PROJECT CTA
+========================= */
+
+.github-project-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  padding: 36px;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+}
+
+.github-project-cta h2 {
+  margin-bottom: 8px;
+
+  color: #f8fafc;
+
+  font-size: 1.8rem;
+}
+
+.github-project-cta p:not(.section-label) {
+  max-width: 700px;
+
+  color: #cbd5e1;
+
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .github-project-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 /* =========================
    FOOTER
