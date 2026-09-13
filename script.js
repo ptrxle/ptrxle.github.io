@@ -1,6 +1,6 @@
-/* =========================
+/* =========================================
    SCROLL REVEAL
-========================= */
+========================================= */
 
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -30,9 +30,9 @@ revealElements.forEach((element) => {
 });
 
 
-/* =========================
-   OCEANEERING PRESENTATION
-========================= */
+/* =========================================
+   OCEANEERING PRESENTATION SLIDESHOW
+========================================= */
 
 const slider = document.getElementById("oceaneeringSlider");
 
@@ -95,7 +95,7 @@ if (slider) {
       image: "images/oceaneering-slides/slide-04.png",
 
       alt:
-        "Oceaneering internship application slide describing IT processes supplier data and PeopleSoft queries",
+        "Oceaneering internship application slide",
 
       label:
         "APPLICATION",
@@ -161,6 +161,10 @@ if (slider) {
   ];
 
 
+  /* =========================================
+     ELEMENTS
+  ========================================= */
+
   const slideImage =
     document.getElementById("presentationSlide");
 
@@ -199,10 +203,9 @@ if (slider) {
   totalCounter.textContent = slides.length;
 
 
-
-  /* =========================
+  /* =========================================
      CREATE DOTS
-  ========================= */
+  ========================================= */
 
   slides.forEach((slide, index) => {
 
@@ -217,6 +220,7 @@ if (slider) {
       `Go to slide ${index + 1}`
     );
 
+
     dot.addEventListener("click", () => {
 
       currentSlide = index;
@@ -225,15 +229,15 @@ if (slider) {
 
     });
 
+
     dotsContainer.appendChild(dot);
 
   });
 
 
-
-  /* =========================
+  /* =========================================
      UPDATE SLIDE
-  ========================= */
+  ========================================= */
 
   function updateSlide() {
 
@@ -273,6 +277,7 @@ if (slider) {
           index === currentSlide
         );
 
+
         dot.setAttribute(
           "aria-current",
           index === currentSlide
@@ -287,15 +292,14 @@ if (slider) {
         "slide-changing"
       );
 
-    }, 130);
+    }, 150);
 
   }
 
 
-
-  /* =========================
-     NEXT / PREVIOUS
-  ========================= */
+  /* =========================================
+     NEXT SLIDE
+  ========================================= */
 
   function showNextSlide() {
 
@@ -307,6 +311,10 @@ if (slider) {
   }
 
 
+  /* =========================================
+     PREVIOUS SLIDE
+  ========================================= */
+
   function showPreviousSlide() {
 
     currentSlide =
@@ -317,6 +325,10 @@ if (slider) {
 
   }
 
+
+  /* =========================================
+     BUTTON CONTROLS
+  ========================================= */
 
   nextButton.addEventListener(
     "click",
@@ -330,10 +342,9 @@ if (slider) {
   );
 
 
-
-  /* =========================
+  /* =========================================
      KEYBOARD CONTROLS
-  ========================= */
+  ========================================= */
 
   slider.addEventListener(
     "keydown",
@@ -356,10 +367,9 @@ if (slider) {
   );
 
 
-
-  /* =========================
+  /* =========================================
      MOBILE SWIPE
-  ========================= */
+  ========================================= */
 
   slider.addEventListener(
     "touchstart",
@@ -381,6 +391,7 @@ if (slider) {
 
       touchEndX =
         event.changedTouches[0].screenX;
+
 
       const swipeDistance =
         touchEndX - touchStartX;
@@ -409,6 +420,10 @@ if (slider) {
     }
   );
 
+
+  /* =========================================
+     START SLIDESHOW
+  ========================================= */
 
   updateSlide();
 
