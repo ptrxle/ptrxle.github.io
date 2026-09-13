@@ -1833,3 +1833,620 @@ footer {
 .clickable-project:hover .project-link-label i {
   transform: translate(3px, -3px);
 }
+
+/* =========================================
+   UNIVERSITY OF HOUSTON EDUCATION CARD
+========================================= */
+
+.university-card {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 280px 1fr;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1e293b,
+      #172033
+    );
+
+  border: 1px solid #334155;
+
+  border-radius: 18px;
+}
+
+
+.university-logo-side {
+  min-height: 360px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 40px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(200, 16, 46, 0.12),
+      transparent 70%
+    ),
+    #111827;
+
+  border-right: 1px solid #334155;
+}
+
+
+.university-logo-box {
+  width: 190px;
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.28);
+}
+
+
+.university-logo {
+  display: block;
+
+  width: 100%;
+
+  max-width: 150px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+.university-content {
+  padding: 45px;
+}
+
+
+.university-content h2 {
+  margin-bottom: 6px;
+
+  color: #f8fafc;
+
+  font-size: 2rem;
+}
+
+
+.university-content h3 {
+  margin-bottom: 14px;
+
+  color: #bfdbfe;
+
+  font-size: 1.3rem;
+}
+
+
+.education-school {
+  color: #e2e8f0;
+
+  font-weight: 700;
+
+  font-size: 1rem;
+}
+
+
+.education-division {
+  margin-top: 2px;
+
+  color: #94a3b8;
+}
+
+
+.education-details-wide {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  margin-top: 35px;
+}
+
+
+.education-details-wide div {
+  min-height: 110px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.education-details-wide small {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #94a3b8;
+
+  font-size: 0.8rem;
+}
+
+
+
+/* =========================================
+   EDUCATION CERTIFICATION CTA
+========================================= */
+
+.education-cert-cta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 32px;
+
+  background: #1e293b;
+
+  border: 1px solid #334155;
+
+  border-radius: 16px;
+}
+
+
+.education-cert-icon {
+  width: 60px;
+  height: 60px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    rgba(37, 99, 235, 0.12);
+
+  border: 1px solid
+    rgba(96, 165, 250, 0.25);
+
+  border-radius: 14px;
+
+  color: #60a5fa;
+
+  font-size: 1.5rem;
+}
+
+
+.education-cert-text {
+  flex-grow: 1;
+}
+
+
+.education-cert-text h2 {
+  margin-bottom: 5px;
+
+  color: #f8fafc;
+}
+
+
+.education-cert-text p:not(.section-label) {
+  color: #cbd5e1;
+}
+
+
+
+/* =========================================
+   CERTIFICATIONS PAGE
+========================================= */
+
+.certifications-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 26px;
+}
+
+
+/*
+   These certification cards ARE clickable.
+   Therefore they get the lift/glow effect.
+*/
+
+.cert-card {
+  min-height: 410px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 32px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #1e293b,
+      #172033
+    );
+
+  border: 1px solid #334155;
+
+  border-radius: 17px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.cert-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #60a5fa;
+
+  box-shadow:
+    0 18px 45px
+      rgba(0, 0, 0, 0.25),
+
+    0 0 35px
+      rgba(37, 99, 235, 0.09);
+}
+
+
+.cert-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 28px;
+}
+
+
+.cert-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background:
+    rgba(37, 99, 235, 0.12);
+
+  border: 1px solid
+    rgba(96, 165, 250, 0.22);
+
+  color: #60a5fa;
+
+  font-size: 1.45rem;
+}
+
+
+.cert-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 7px 12px;
+
+  border: 1px solid
+    rgba(96, 165, 250, 0.28);
+
+  border-radius: 999px;
+
+  background:
+    rgba(37, 99, 235, 0.08);
+
+  color: #93c5fd;
+
+  font-size: 0.78rem;
+
+  font-weight: 700;
+}
+
+
+.cert-status i {
+  color: #60a5fa;
+}
+
+
+.cert-content {
+  display: flex;
+
+  flex-direction: column;
+
+  flex-grow: 1;
+}
+
+
+.cert-content h2 {
+  margin-bottom: 14px;
+
+  color: #f8fafc;
+
+  font-size: 1.65rem;
+}
+
+
+.cert-content > p:not(.project-type) {
+  color: #cbd5e1;
+
+  line-height: 1.75;
+}
+
+
+.cert-skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+
+.cert-skills span {
+  padding: 6px 11px;
+
+  background: #0f172a;
+
+  border: 1px solid #334155;
+
+  border-radius: 999px;
+
+  color: #bfdbfe;
+
+  font-size: 0.8rem;
+}
+
+
+.certificate-link {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: auto;
+
+  padding-top: 30px;
+
+  color: #60a5fa;
+
+  font-weight: 700;
+}
+
+
+.certificate-link i {
+  transition:
+    transform 0.25s ease;
+}
+
+
+.cert-card:hover
+.certificate-link i {
+  transform:
+    translate(3px, -3px);
+}
+
+
+
+/* =========================================
+   CERTIFICATE PDF NOTE
+========================================= */
+
+.certificate-note {
+  max-width: 700px;
+
+  margin: 30px auto 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 18px 22px;
+
+  background:
+    rgba(30, 41, 59, 0.65);
+
+  border: 1px solid #334155;
+
+  border-radius: 12px;
+}
+
+
+.certificate-note > i {
+  color: #60a5fa;
+
+  font-size: 1.35rem;
+}
+
+
+.certificate-note strong {
+  color: #e2e8f0;
+}
+
+
+.certificate-note p {
+  margin-top: 2px;
+
+  color: #94a3b8;
+
+  font-size: 0.87rem;
+}
+
+
+
+/* =========================================
+   CLICKABLE HOMEPAGE HIGHLIGHT
+========================================= */
+
+.highlight-link-card {
+  padding: 25px;
+
+  background: #1e293b;
+
+  border: 1px solid #334155;
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.highlight-link-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #60a5fa;
+
+  box-shadow:
+    0 15px 35px
+      rgba(0, 0, 0, 0.2);
+}
+
+
+.highlight-link-card h3 {
+  margin-bottom: 9px;
+
+  color: #f8fafc;
+
+  font-size: 1.05rem;
+}
+
+
+.highlight-link-card p {
+  color: #cbd5e1;
+
+  font-size: 0.94rem;
+}
+
+
+.highlight-link-card > span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color: #60a5fa;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+}
+
+
+
+/* =========================================
+   RESPONSIVE EDUCATION / CERTIFICATIONS
+========================================= */
+
+@media (max-width: 900px) {
+
+  .university-card {
+    grid-template-columns: 1fr;
+  }
+
+
+  .university-logo-side {
+    min-height: auto;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid #334155;
+  }
+
+
+  .education-details-wide {
+    grid-template-columns: 1fr;
+  }
+
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .education-cert-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .university-content {
+    padding: 25px;
+  }
+
+
+  .university-logo-side {
+    padding: 30px;
+  }
+
+
+  .university-logo-box {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .cert-card {
+    min-height: auto;
+
+    padding: 24px;
+  }
+
+
+  .education-cert-cta {
+    padding: 24px;
+  }
+
+}
