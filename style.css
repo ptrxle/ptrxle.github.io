@@ -2930,3 +2930,169 @@ footer {
   }
 
 }
+
+/* =========================================
+   EXPERIENCE PRESENTATION CALLOUT
+========================================= */
+
+.experience-presentation-callout {
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 32px;
+
+  padding: 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.12),
+      rgba(30, 41, 59, 0.8)
+    );
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  border-radius: 14px;
+}
+
+
+.experience-presentation-callout-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: rgba(37, 99, 235, 0.15);
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  border-radius: 12px;
+
+  color: #60a5fa;
+
+  font-size: 1.25rem;
+}
+
+
+.experience-presentation-callout-text h3 {
+  margin-bottom: 5px;
+
+  color: #f8fafc;
+
+  font-size: 1.08rem;
+}
+
+
+.experience-presentation-callout-text p:not(.project-type) {
+  max-width: 650px;
+
+  color: #94a3b8;
+
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+}
+
+
+.presentation-scroll-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 11px 17px;
+
+  white-space: nowrap;
+
+  background: #2563eb;
+
+  border: 1px solid #3b82f6;
+
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-size: 0.88rem;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.presentation-scroll-button:hover {
+  transform: translateY(-3px);
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+.presentation-scroll-button i {
+  animation: presentationArrow 1.6s ease-in-out infinite;
+}
+
+
+@keyframes presentationArrow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+}
+
+
+#internship-presentation {
+  scroll-margin-top: 85px;
+}
+
+
+@media (max-width: 800px) {
+
+  .experience-presentation-callout {
+    grid-template-columns: auto 1fr;
+  }
+
+  .presentation-scroll-button {
+    grid-column: 1 / -1;
+
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .experience-presentation-callout {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-presentation-callout-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+}
