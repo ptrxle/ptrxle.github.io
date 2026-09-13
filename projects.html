@@ -35,16 +35,16 @@
           Home
         </a>
 
+        <a href="about.html">
+          About
+        </a>
+
         <a href="experience.html">
           Experience
         </a>
 
         <a class="active" href="projects.html">
           Projects
-        </a>
-
-        <a href="skills.html">
-          Skills
         </a>
 
         <a href="education.html">
@@ -108,7 +108,6 @@
 
   <main>
 
-
     <!-- =========================
          PROJECTS
     ========================== -->
@@ -124,12 +123,7 @@
                HELPDESK PROJECT
           ========================== -->
 
-          <a
-            href="https://github.com/ptrxle/Enterprise-IT-Helpdesk-Service-Desk-Analytics-Lab"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-card clickable-project reveal"
-          >
+          <article class="project-card reveal">
 
             <div class="project-image-container">
 
@@ -151,13 +145,18 @@
                   IT SERVICE MANAGEMENT
                 </p>
 
-                <span class="project-link-label">
+                <a
+                  href="https://github.com/ptrxle/Enterprise-IT-Helpdesk-Service-Desk-Analytics-Lab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link-label"
+                >
 
                   View Project
 
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                </span>
+                </a>
 
               </div>
 
@@ -241,20 +240,14 @@
 
             </div>
 
-          </a>
-
+          </article>
 
 
           <!-- =========================
                ACTIVE DIRECTORY / SPLUNK
           ========================== -->
 
-          <a
-            href="https://github.com/ptrxle/Enterprise-AD-Splunk-Pipeline-Lab"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-card clickable-project reveal"
-          >
+          <article class="project-card reveal">
 
             <div class="project-image-container">
 
@@ -276,13 +269,18 @@
                   CYBERSECURITY
                 </p>
 
-                <span class="project-link-label">
+                <a
+                  href="https://github.com/ptrxle/Enterprise-AD-Splunk-Pipeline-Lab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link-label"
+                >
 
                   View Project
 
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                </span>
+                </a>
 
               </div>
 
@@ -366,49 +364,40 @@
 
             </div>
 
-          </a>
-
+          </article>
 
 
           <!-- =========================
                AWS PROJECT
           ========================== -->
 
-          <article
-            class="project-card project-card-no-image reveal"
-          >
+          <article class="project-card project-card-no-image reveal">
 
             <div class="project-content">
-
 
               <p class="project-type">
                 CLOUD INFRASTRUCTURE
               </p>
 
-
               <h2>
                 AWS Cloud Infrastructure Lab
               </h2>
-
 
               <p>
                 Built a cloud infrastructure lab using Linux EC2,
                 IAM, S3, VPC networking, and security groups.
               </p>
 
-
               <p class="project-extra">
                 Configured inbound and outbound access controls,
                 networking rules, and cloud resource permissions.
               </p>
-
 
               <p class="project-extra">
                 Applied least-privilege IAM permissions and validated
                 routing, network accessibility, and security group
                 behavior across the environment.
               </p>
-
 
               <div class="tech-tags">
 
@@ -438,52 +427,42 @@
 
               </div>
 
-
             </div>
 
           </article>
-
 
 
           <!-- =========================
                RECIPE MANAGER
           ========================== -->
 
-          <article
-            class="project-card project-card-no-image reveal"
-          >
+          <article class="project-card project-card-no-image reveal">
 
             <div class="project-content">
-
 
               <p class="project-type">
                 SOFTWARE DEVELOPMENT
               </p>
 
-
               <h2>
                 Recipe Manager Web Application
               </h2>
-
 
               <p>
                 Built a full-stack web application using Flask,
                 SQL, and JavaScript.
               </p>
 
-
               <p class="project-extra">
                 Implemented REST APIs, user authentication,
                 CRUD functionality, and backend validation.
               </p>
-
 
               <p class="project-extra">
                 Tested API endpoints using Postman while integrating
                 frontend components, backend application logic,
                 and a relational database.
               </p>
-
 
               <div class="tech-tags">
 
@@ -509,7 +488,6 @@
 
               </div>
 
-
             </div>
 
           </article>
@@ -520,7 +498,6 @@
       </div>
 
     </section>
-
 
 
     <!-- =========================
@@ -581,15 +558,81 @@
        FOOTER
   ========================== -->
 
-  <footer>
+  <footer class="site-footer">
 
-    <p>
-      © 2026 Peter Le
-    </p>
+    <div class="container footer-content">
 
-    <p>
-      Houston, Texas
-    </p>
+
+      <div class="footer-info">
+
+        <strong>
+          Peter Le
+        </strong>
+
+        <span>
+          © 2026 • Houston, Texas
+        </span>
+
+      </div>
+
+
+      <div class="footer-links">
+
+
+        <a
+          href="https://www.linkedin.com/in/leptr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Peter Le on LinkedIn"
+          title="LinkedIn"
+        >
+
+          <i class="fa-brands fa-linkedin-in"></i>
+
+        </a>
+
+
+        <a
+          href="https://github.com/ptrxle"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Peter Le on GitHub"
+          title="GitHub"
+        >
+
+          <i class="fa-brands fa-github"></i>
+
+        </a>
+
+
+        <a
+          href="mailto:lepeter2022@gmail.com"
+          aria-label="Email Peter Le"
+          title="Email"
+        >
+
+          <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+
+        <a
+          href="Peter-Le-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Peter Le's resume"
+          title="Resume"
+        >
+
+          <i class="fa-solid fa-file-lines"></i>
+
+        </a>
+
+
+      </div>
+
+
+    </div>
 
   </footer>
 
