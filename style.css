@@ -4150,3 +4150,19 @@ footer {
   }
 
 }
+
+
+/* =========================================
+   EDUCATION + SKILLS
+========================================= */
+
+.education-skills-intro {
+  max-width: 760px;
+
+  margin-top: -20px;
+  margin-bottom: 35px;
+
+  color: #94a3b8;
+
+  line-height: 1.75;
+}
