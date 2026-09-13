@@ -1619,6 +1619,15 @@ section {
   object-fit: contain;
 }
 
+.cert-logo-a {
+  width: 85%;
+  height: 85%;
+}
+
+.cert-logo-network {
+  width: 70%;
+  height: 70%;
+}
 
 /* =========================
    CERTIFICATION STATUS
