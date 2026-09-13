@@ -4410,3 +4410,105 @@ footer {
   }
 
 }
+
+
+/* =========================================
+   HOMEPAGE STATIC CARDS + ACTION LINKS
+========================================= */
+
+/* Cards themselves are informational */
+
+.info-card,
+.explore-card {
+  cursor: default;
+}
+
+.info-card:hover,
+.explore-card:hover {
+  transform: none;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+
+/* Shared explicit card links */
+
+.card-action-link,
+.explore-action-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color: #60a5fa;
+
+  font-size: 0.88rem;
+
+  font-weight: 700;
+
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card-action-link:hover,
+.explore-action-link:hover {
+  gap: 12px;
+
+  color: #93c5fd;
+
+  transform: translateY(-1px);
+}
+
+
+/* Override the old explore-card span rules */
+
+.explore-card .explore-action-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #60a5fa;
+
+  font-weight: 700;
+
+  font-size: 0.9rem;
+}
+
+
+/* LinkedIn container stays still.
+   Only the LinkedIn button should feel interactive. */
+
+.linkedin-card {
+  cursor: default;
+}
+
+.linkedin-card:hover {
+  transform: none;
+
+  border-color: #334155;
+
+  box-shadow: none;
+}
+
+.linkedin-action {
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.linkedin-action:hover {
+  transform: translateY(-2px);
+
+  background: #0b76dd;
+
+  box-shadow:
+    0 10px 24px rgba(10, 102, 194, 0.2);
+}
