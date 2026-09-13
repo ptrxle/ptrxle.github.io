@@ -22,8 +22,6 @@
 
 <body>
 
-  <!-- NAVIGATION -->
-
   <nav>
     <div class="container nav-container">
 
@@ -35,6 +33,7 @@
         <a href="projects.html">Projects</a>
         <a href="skills.html">Skills</a>
         <a href="education.html">Education</a>
+        <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact</a>
 
         <a
@@ -50,8 +49,6 @@
     </div>
   </nav>
 
-
-  <!-- HERO -->
 
   <header class="hero">
 
@@ -169,8 +166,6 @@
 
   <main>
 
-    <!-- PROFESSIONAL SUMMARY -->
-
     <section>
 
       <div class="container reveal">
@@ -214,7 +209,12 @@
             </a>
 
             <a href="education.html" class="text-link">
-              Education & certifications
+              View education
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="certifications.html" class="text-link">
+              View certifications
               <i class="fa-solid fa-arrow-right"></i>
             </a>
 
@@ -226,8 +226,6 @@
 
     </section>
 
-
-    <!-- QUICK HIGHLIGHTS -->
 
     <section class="alternate-section">
 
@@ -261,7 +259,10 @@
           </div>
 
 
-          <div class="info-card reveal">
+          <a
+            href="education.html"
+            class="highlight-link-card reveal"
+          >
 
             <div class="card-icon">
               <i class="fa-solid fa-graduation-cap"></i>
@@ -273,10 +274,18 @@
               B.S. Computer Information Systems, expected December 2026.
             </p>
 
-          </div>
+            <span>
+              View Education
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </a>
 
 
-          <div class="info-card reveal">
+          <a
+            href="certifications.html"
+            class="highlight-link-card reveal"
+          >
 
             <div class="card-icon">
               <i class="fa-solid fa-certificate"></i>
@@ -288,7 +297,12 @@
               CompTIA A+ and CompTIA Network+.
             </p>
 
-          </div>
+            <span>
+              View Certifications
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </a>
 
 
           <div class="info-card reveal">
@@ -312,8 +326,6 @@
 
     </section>
 
-
-    <!-- FEATURED PROJECTS -->
 
     <section>
 
@@ -339,9 +351,12 @@
 
         <div class="featured-project-grid">
 
-          <!-- STATIC UNTIL A REAL PROJECT URL IS ADDED -->
-
-          <article class="project-card reveal">
+          <a
+            href="https://github.com/ptrxle/Enterprise-IT-Helpdesk-Service-Desk-Analytics-Lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card clickable-project reveal"
+          >
 
             <div class="project-image-container">
 
@@ -355,9 +370,18 @@
 
             <div class="project-content">
 
-              <p class="project-type">
-                IT SERVICE MANAGEMENT
-              </p>
+              <div class="project-top-row">
+
+                <p class="project-type">
+                  IT SERVICE MANAGEMENT
+                </p>
+
+                <span class="project-link-label">
+                  View Project
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
+
+              </div>
 
               <h3>
                 Enterprise IT Helpdesk & Power BI Analytics
@@ -377,12 +401,15 @@
 
             </div>
 
-          </article>
+          </a>
 
 
-          <!-- STATIC UNTIL A REAL PROJECT URL IS ADDED -->
-
-          <article class="project-card reveal">
+          <a
+            href="https://github.com/ptrxle/Enterprise-AD-Splunk-Pipeline-Lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card clickable-project reveal"
+          >
 
             <div class="project-image-container">
 
@@ -396,9 +423,18 @@
 
             <div class="project-content">
 
-              <p class="project-type">
-                CYBERSECURITY
-              </p>
+              <div class="project-top-row">
+
+                <p class="project-type">
+                  CYBERSECURITY
+                </p>
+
+                <span class="project-link-label">
+                  View Project
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
+
+              </div>
 
               <h3>
                 Active Directory & Splunk SIEM Lab
@@ -418,7 +454,7 @@
 
             </div>
 
-          </article>
+          </a>
 
         </div>
 
@@ -426,8 +462,6 @@
 
     </section>
 
-
-    <!-- EXPLORE -->
 
     <section class="alternate-section">
 
@@ -507,11 +541,29 @@
             <h3>Education</h3>
 
             <p>
-              University background, academic achievements, and certifications.
+              View my University of Houston academic background.
             </p>
 
             <span>
               View Education
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </a>
+
+
+          <a href="certifications.html" class="explore-card reveal">
+
+            <i class="fa-solid fa-certificate"></i>
+
+            <h3>Certifications</h3>
+
+            <p>
+              View my CompTIA certifications and certificate documents.
+            </p>
+
+            <span>
+              View Certifications
               <i class="fa-solid fa-arrow-right"></i>
             </span>
 
@@ -523,8 +575,6 @@
 
     </section>
 
-
-    <!-- LINKEDIN CARD -->
 
     <section>
 
@@ -596,54 +646,6 @@
 
     </section>
 
-
-    <!-- FINAL CTA -->
-
-    <section class="alternate-section">
-
-      <div class="container reveal">
-
-        <div class="home-cta">
-
-          <p class="section-label">
-            LET'S CONNECT
-          </p>
-
-          <h2>
-            Interested in working together?
-          </h2>
-
-          <p>
-            I'm interested in opportunities across IT infrastructure,
-            systems administration, cloud, cybersecurity, and IT operations.
-          </p>
-
-
-          <div class="button-row centered-buttons">
-
-            <a
-              class="button primary-button"
-              href="mailto:lepeter2022@gmail.com"
-            >
-              <i class="fa-solid fa-envelope"></i>
-              Email Me
-            </a>
-
-            <a
-              class="button secondary-button"
-              href="contact.html"
-            >
-              Contact Information
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
   </main>
 
 
@@ -651,9 +653,7 @@
 
     <p>© 2026 Peter Le</p>
 
-    <p>
-      Houston, Texas
-    </p>
+    <p>Houston, Texas</p>
 
   </footer>
 
