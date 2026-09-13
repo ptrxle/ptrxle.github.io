@@ -2535,68 +2535,386 @@ footer {
   color: #60a5fa;
 }
 
+/* =========================================
+   OCEANEERING PRESENTATION SECTION
+========================================= */
+
+.presentation-context {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  gap: 24px;
+
+  max-width: 900px;
+  margin-bottom: 38px;
+  padding: 28px;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+}
+
+.presentation-context-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  border-radius: 14px;
+
+  color: #60a5fa;
+  font-size: 1.4rem;
+}
+
+.presentation-context h3 {
+  margin-bottom: 10px;
+  color: #f8fafc;
+  font-size: 1.2rem;
+}
+
+.presentation-context p {
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+
+.presentation-context p + p {
+  margin-top: 10px;
+}
+
 
 /* =========================================
-   PRESENTATION RESPONSIVE
+   SLIDER WRAPPER
+========================================= */
+
+.presentation-slider {
+  overflow: hidden;
+
+  background: linear-gradient(
+    145deg,
+    #1e293b,
+    #172033
+  );
+
+  border: 1px solid #334155;
+  border-radius: 18px;
+}
+
+.presentation-slider:focus-visible {
+  outline: 3px solid rgba(96, 165, 250, 0.25);
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   SLIDE IMAGE
+========================================= */
+
+.presentation-slide-stage {
+  padding: 28px;
+
+  background: #0b1120;
+}
+
+.presentation-slide-frame {
+  width: 100%;
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 10px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.presentation-slide-frame img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  opacity: 1;
+
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease;
+}
+
+.presentation-slide-frame img.slide-changing {
+  opacity: 0;
+  transform: scale(0.985);
+}
+
+
+/* =========================================
+   SLIDE CONTROLS
+========================================= */
+
+.presentation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  padding: 22px 25px 5px;
+}
+
+.slider-arrow {
+  width: 54px;
+  height: 54px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #475569;
+  border-radius: 50%;
+
+  background: #1e293b;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 1.15rem;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.slider-arrow i {
+  pointer-events: none;
+}
+
+.slider-arrow:hover {
+  background: #2563eb;
+  border-color: #60a5fa;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.slider-arrow:active {
+  transform: scale(0.94);
+}
+
+.slider-arrow:focus-visible {
+  outline: 3px solid rgba(96, 165, 250, 0.28);
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   DOTS
+========================================= */
+
+.presentation-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  min-width: 140px;
+}
+
+.presentation-dot {
+  width: 10px;
+  height: 10px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #475569;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transition:
+    width 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.presentation-dot:hover {
+  background: #93c5fd;
+  transform: scale(1.15);
+}
+
+.presentation-dot.active {
+  width: 30px;
+
+  border-radius: 999px;
+
+  background: #60a5fa;
+}
+
+
+/* =========================================
+   SLIDE INFO
+========================================= */
+
+.presentation-slider-bottom {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 20px 32px 28px;
+}
+
+.presentation-slide-label {
+  margin-bottom: 5px;
+
+  color: #60a5fa;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.presentation-slider-bottom h3 {
+  margin-bottom: 7px;
+
+  color: #f8fafc;
+
+  font-size: 1.3rem;
+}
+
+.presentation-slide-description {
+  max-width: 760px;
+
+  color: #94a3b8;
+
+  line-height: 1.65;
+}
+
+.presentation-counter {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: baseline;
+
+  gap: 5px;
+
+  color: #94a3b8;
+
+  font-size: 0.9rem;
+}
+
+#presentationCurrent {
+  color: #60a5fa;
+
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.counter-divider {
+  color: #475569;
+}
+
+
+/* =========================================
+   PRESENTATION ACTIONS
+========================================= */
+
+.presentation-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-top: 28px;
+}
+
+.presentation-action-note {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  max-width: 500px;
+
+  color: #94a3b8;
+
+  font-size: 0.85rem;
+
+  line-height: 1.55;
+}
+
+.presentation-action-note i {
+  flex-shrink: 0;
+
+  color: #60a5fa;
+}
+
+
+/* =========================================
+   RESPONSIVE
 ========================================= */
 
 @media (max-width: 900px) {
 
-  .presentation-slide-stage {
-    min-height: auto;
-
-    padding:
-      30px
-      70px;
-  }
-
   .presentation-actions {
     flex-direction: column;
-
     align-items: flex-start;
   }
 
 }
 
-
 @media (max-width: 600px) {
 
   .presentation-context {
     grid-template-columns: 1fr;
-
     padding: 22px;
   }
 
   .presentation-slide-stage {
-    padding:
-      55px
-      14px
-      20px;
+    padding: 14px;
   }
 
-  .presentation-slide-frame {
-    border-radius: 7px;
+  .presentation-controls {
+    gap: 12px;
   }
 
   .slider-arrow {
-    top: 26px;
-
-    width: 40px;
-    height: 40px;
-
-    transform: none;
-  }
-
-  .slider-arrow:active {
-    transform: scale(0.94);
-  }
-
-  .slider-arrow-left {
-    left: 14px;
-  }
-
-  .slider-arrow-right {
-    right: 14px;
+    width: 48px;
+    height: 48px;
   }
 
   .presentation-slider-bottom {
@@ -2604,11 +2922,7 @@ footer {
 
     gap: 15px;
 
-    padding: 22px;
-  }
-
-  .presentation-dots {
-    padding-bottom: 22px;
+    padding: 20px 22px 24px;
   }
 
   .presentation-actions .button {
